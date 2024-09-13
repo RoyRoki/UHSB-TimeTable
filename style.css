@@ -100,9 +100,9 @@ img {
 }
 .clock {
     margin: 20px auto;
-    position: relative;
-    margin-bottom: 10px;
-    width: 580px;
+    position: absolute;
+    bottom: 10px;
+    min-width: 580px;
     left: 50%;
     transform: translateX(-50%);
 }
