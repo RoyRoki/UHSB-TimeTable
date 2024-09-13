@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    margin-bottom: -200px;
 }
 
 h1 {
@@ -98,9 +99,12 @@ img {
     color: #333;
 }
 .clock {
+    margin: 20px auto;
     position: absolute;
     bottom: 10px;
-    align-items: center;
+    min-width: 580px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #motivational-line {
@@ -173,19 +177,21 @@ tbody td::after {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     animation: pulse 2s infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .clock-display {
     font-size: 5rem;
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    
 }
 
 .date-display {
     margin-top: 10px;
     font-size: 1.5rem;
-    color: #3d3939d0
+    color: #dcdcdcd0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 #hours, #minutes, #seconds {
