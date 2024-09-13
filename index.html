@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>College Timetable Reminder</h1>
+    <div class="timetable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td data-day="Monday" data-time="9:00 AM">PAT 201</td>
+                    <td data-day="Tuesday" data-time="9:00 AM">ENT 201</td>
+                    <td data-day="Wednesday" data-time="9:00 AM">AGR 201</td>
+                    <td data-day="Thursday" data-time="9:00 AM">FSC 201</td>
+                    <td data-day="Friday" data-time="9:00 AM">ENT 201</td>
+                    <td data-day="Saturday" data-time="9:00 AM">NSS 201-></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td data-day="Monday" data-time="10:00 AM">FLA 201</td>
+                    <td data-day="Tuesday" data-time="10:00 AM">FSC 201</td>
+                    <td data-day="Wednesday" data-time="10:00 AM">PMA 201</td>
+                    <td data-day="Thursday" data-time="10:00 AM">VSC 201</td>
+                    <td data-day="Friday" data-time="10:00 AM">GPB 201</td>
+                    <td data-day="Saturday" data-time="10:00 AM"> <- </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td data-day="Monday" data-time="11:00 AM">PAT(A1), AGR(A2), ENT(A3)</td>
+                    <td data-day="Tuesday" data-time="11:00 AM">SAC(A1), VSC(A2), PAT(A3)</td>
+                    <td data-day="Wednesday" data-time="11:00 AM">VSC(A1), SAC(A2), AGR(A3)</td>
+                    <td data-day="Thursday" data-time="11:00 AM">ENT(A1), GPB(A2), Lib(A3)</td>
+                    <td data-day="Friday" data-time="11:00 AM">Lib(A1), ENT(A2), GPB(A3)</td>
+                    <td data-day="Saturday" data-time="11:00 AM">Counsellor meeting</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td data-day="Monday" data-time="12:00 PM">-- -- <-</td>
+                    <td data-day="Tuesday" data-time="12:00 PM">-- -- <-</td>
+                    <td data-day="Wednesday" data-time="12:00 PM">-- -- <-</td>
+                    <td data-day="Thursday" data-time="12:00 PM">-- -- <-</td>
+                    <td data-day="Friday" data-time="12:00 PM">-- -- <-</td>
+                    <td data-day="Saturday" data-time="12:00 PM">-- -- <-</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01:00 PM</td>
+                   <td data-day="Monday" data-time="1:00 PM">🍱🍛🧃</td>
+                   <td data-day="Tuesday" data-time="1:00 PM">🍚🍲🥥</td>
+                   <td data-day="Wednesday" data-time="1:00 PM">🍛🍗🥥</td>
+                   <td data-day="Thursday" data-time="1:00 PM">🍚🍜🍤</td>
+                   <td data-day="Saturday" data-time="1:00 PM">🍛🍚🍢</td>
+                   <td data-day="Friday" data-time="1:00 PM">🥘🍲🍛</td>
+                   <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>02:00 PM</td>
+                    <td data-day="Monday" data-time="2:00 PM">SAC 201</td>
+                    <td data-day="Tuesday" data-time="2:00 PM">PAT 201</td>
+                    <td data-day="Wednesday" data-time="2:00 PM">Counsellor meeting</td>
+                    <td data-day="Thursday" data-time="2:00 PM">GPB 201</td>
+                    <td data-day="Friday" data-time="2:00 PM">VSC 201</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03:00 PM</td>
+                    <td data-day="Monday" data-time="5:00 PM">AGR(A1), PAT(A2), VSC(A3)</td>
+                    <td data-day="Tuesday" data-time="5:00 PM">GPB(A1), Lib(A2), SAC(A3)</td>
+                    <td data-day="Wednesday" data-time="5:00 PM">FLA(A1), PMA(A2), FSC(A3)</td>
+                    <td data-day="Thursday" data-time="5:00 PM">FSC(A1), FLA(A2), PMA(A3)</td>
+                    <td data-day="Friday" data-time="5:00 PM">PMA(A1), FSC(A2), FLA(A3)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              <tr>
+                    <td>04:00 PM</td>
+                    <td data-day="Monday" data-time="4:00 PM"> <-- </td>
+                    <td data-day="Tuesday" data-time="4:00 PM"> <-- </td>
+                    <td data-day="Wednesday" data-time="4:00 PM"> <-- </td>
+                    <td data-day="Thursday" data-time="4:00 PM"> <-- </td>
+                    <td data-day="Friday" data-time="4:00 PM"> <-- </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="motivational-container">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipM6rj9JrnUv02FnBz0hlR3CollMISCbAATuhC11=w500-h500-k-no" alt="University of Horticultural Sciences">
+        <p id="motivational-line"></p>
+    </div>    
+</body>
+</html>
