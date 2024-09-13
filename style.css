@@ -102,8 +102,7 @@ img {
     margin: 20px auto;
     position: relative;
     margin-bottom: 10px;
-    min-width: 580px;
-    max-width: 700px;
+    width: 580px;
     left: 50%;
     transform: translateX(-50%);
 }
