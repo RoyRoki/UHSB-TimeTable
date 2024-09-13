@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #e0f7fa 30%, #ffccbc 100%);
+    background-attachment: fixed; /* Ensures the gradient stays fixed */
+    background-size: cover; /* Ensures the gradient covers the entire body */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    margin: 0;
+    margin-bottom: -15px;
+    padding: 0;
+    min-height: 100vh; /* Ensures the body covers at least the full viewport height */
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 3rem;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timetable {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word; /* Allows longer class names to wrap */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody td:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+}
+
+tbody td {
+    position: relative;
+}
+
+.highlight {
+    background-color: #ffe082; /* Softer yellow for highlight */
+    color: black;
+    font-weight: bold;
+}
+img {
+    display: none;
+}
+/* Styles for motivational line container */
+.motivational-container {
+    margin: 20px auto;
+    margin-top: 60px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-size: 3.2rem;
+    color: #333;
+}
+
+/* Style for motivational line text */
+#motivational-line {
+    font-style: italic;
+    font-weight: bold;
+    color: #4CAF50; /* Motivational green color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .motivational-container {
+        margin: 10px auto;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 40px; 
+        padding: auto;
+
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+    
+    thead tr {
+        display: none;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody td::before {
+        content: attr(data-day) ' ' attr(data-time);
+        font-weight: bold;
+        color: #333;
+    }
+
+    tbody td[data-day]::after {
+        content: none;
+    }
+    
+    .timetable {
+        width: 100%;
+    }
+}
+
+/* Beautiful time display inside the cells (optional) */
+tbody td::after {
+    content: attr(data-time);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 10px;
+    color: #888;
+}
+
+/* Table and content look on larger screens */
+@media (min-width: 769px) {
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 40px; 
+        padding: auto;
+
+    }
+    table {
+        table-layout: fixed; /* Ensures the table is well-proportioned on larger screens */
+    }
+}
